@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+ <!-- <link rel="stylesheet" href="drop.css"> -->
+</head>
+<body>
+        
+
+<div class="header">
+  <h1>Farmers Portal</h1>
+  <p>Scheme For Farmers</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <!-- <a href="Farmerreg.html">Register</a> -->
+  <div class="dropdown">
+        <button class="dropbtn">Register
+                 </button>
+        <div class="dropdown-content">
+          <a href="Farmerregister.do">Farmer</a>
+          <a href="Bidderregister.do">Bidder</a>
+          <a href="Adminhome.do">ViewUser</a>
+          
+        </div>
+    </div> 
+  <!-- <a href="logint.html">Login</a> -->
+  <div class="dropdown">
+        <button class="dropbtn">Login
+                 </button>
+        <div class="dropdown-content">
+          <a href="#">Admin</a>
+          <a href="login1.do">Farmer</a>
+          <a href="login2.do">Bidder</a>
+        </div>
+    </div> 
+  <a href="About.html">About Us</a>
+  <a href="Contact.html">Contact Us</a>
+  
+  <!-- <a href="#" style="float:right">Link</a> -->
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Farmer Gallery</h2>
+      <h5>This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
+        Ministry of Agriculture and Farmers Welfare, Government of India </h5>
+        
+        <div class="" style="height:200px;">Image
+        <!-- <div class="card" style="max-width:500px"> -->
+            <center>
+          <img class="mySlides" src="'../../img/farms.jpeg" style="width:60%">
+          <img class="mySlides" src="'../../img/cover.jpg" style="width:60%">
+          <img class="mySlides" src="'../../img/farms.jpeg" style="width:60%">
+        </center>
+        </div>
+        <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+        </script>
+        
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Related Links</h2>
+      
+      <ol><a target="_blank" href="https://pmfby.gov.in/">Pradhan Mantri Fasal Bima Yojana</a></ol>
+      <ol><a target="_blank" href="https://rkvy.nic.in/reportmenu/reportnavigation.html">RKVY Projects</a></ol>
+      <ol><a target="_blank" href="https://mkisan.gov.in/">mkisan</a></ol>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <li><a target="_blank" href="https://india.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img2.jpg"></a></li>
+    <li><a target="_blank" href="https://digitizeindia.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img3.jpg"></a></li>
+    <li><a target="_blank" href="https://data.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img4.jpg"></a></li>
+    <li><a target="_blank" href="https://meity.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img5.jpg"></a></li>
+  </div>
+  
+</div>
+
+</body>
+</html>
